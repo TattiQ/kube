@@ -1,0 +1,13 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: registry-ingress
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    nginx.org/lb-method: "ip_hash"
+    nginx.org/client-max-body-size: "0"
+spec:
+  backend:
+    serviceName: registry-service
+    servicePort: 5000
