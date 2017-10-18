@@ -1,4 +1,4 @@
-# k8s-droidcraft
+# k8s-v2-registry-POC
 
 0. Go through the README steps in k8s-droidcraft/prepare/ to get kubernetes up and running(bare metal in this case). 
 
