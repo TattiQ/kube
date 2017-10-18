@@ -1,0 +1,14 @@
+---
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: registry-ingress
+spec:
+  rules:
+  - host: docker.aws.droidcraft.org
+    http:
+      paths:
+      - path:
+        backend:
+          serviceName: kube-registry-tls
+          servicePort: 5000
